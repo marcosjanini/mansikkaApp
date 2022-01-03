@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css/webAppExercises.css">
+<script src="ajaxhelper.js"></script>
+<script src="clientAdd.js"></script>
+
+<title>Add Client</title>
+</head>
+<body>
+	<main>
+
+		<form id="formClient" method="POST">
+		<h3>--- Add Client ---</h3><br>
+					Id: <input type="number" name="id">
+			First name: <input type="text" name="firstname">
+			Last name: <input type="text" name="lastname"> 
+			Phone: <input type="text" name="phone">
+			E-mail: <input type="text" name="email"> 
+			Tax Id: <input type="text" name="taxId"> 
+			Street: <input type="text" name="streetaddress"> 
+			Post code: <input type="number" name="postcode"> 
+			City: <input type="text" name="city"><br> 
+			<input id="addClient" type="button" onclick=formClient() value="Submit">
+		</form>
+	</main>
+
+</body>
+</html>
