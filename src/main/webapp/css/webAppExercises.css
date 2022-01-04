@@ -1,6 +1,9 @@
 body {
+	background-image: url("../images/fresas.png");
+	background-repeat: repeat;
 	background-color: rgb(220, 250, 238);
 	margin: 0;
+	font-family: 'Roboto Condensed', sans-serif;
 }
 
 main {
@@ -8,10 +11,19 @@ main {
 	text-align: center;
 }
 
+.header {
+	background-color: rgba(220, 250, 238, 0.6);
+	backdrop-filter: blur(10px);
+	text-shadow: 0 0 2px #000000;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
 h1 {
 	font-size: 3em;
 	color: rgb(220, 0, 86);
 	text-align: center;
+	padding: 10px;
 }
 
 h3 {
@@ -22,7 +34,7 @@ h3 {
 
 table {
 	margin: 60px auto;
-	background-color: rgba(220, 0, 86, 0.2);
+	background-color: rgba(220, 0, 86, 0.4);
 	top: 50%;
 	left: 50%;
 	border-radius: 10px;
@@ -54,7 +66,7 @@ td {
 
 form {
 	width: 40%;
-	background-color: rgba(220, 0, 86, 0.2);
+	background-color: rgba(220, 0, 86, 0.4);
 	top: 50%;
 	left: 50%;
 	border-radius: 10px;
@@ -65,10 +77,8 @@ form {
 	display: inline-block;
 	font-size: 1.1em;
 	text-align: left;
-	  line-height: 1.6;
-	  	font-weight: 300;
-	  
-	
+	line-height: 1.6;
+	font-weight: 300;
 }
 
 input {
@@ -81,10 +91,36 @@ input {
 }
 
 #addClient {
-		width: 40%;
-		border-radius: 5px;
+	width: 40%;
+	border-radius: 5px;
 	padding: 4px;
 	font-size: 1.1em;
 	font-weight: 300;
-	
+}
+
+a.link1:link, a.link1:visited, a.link1:active {
+	text-decoration: none;
+	color: white;
+	letter-spacing: .04em;
+}
+
+a.link1:hover, a.link1:focus {
+	text-decoration: none;
+	color: rgb(220, 0, 86);
+	letter-spacing: .04em;
+}
+
+.boton {
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 2em;
+	color: rgb(220, 0, 86);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	background-color: rgba(220, 250, 238, 0.9);
+	border-color: rgb(220, 0, 86);
+	border-width: 3px;
+	border-style: solid;
 }
