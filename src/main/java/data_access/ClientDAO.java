@@ -91,7 +91,6 @@ public class ClientDAO {
 		Connection connection = null;
 		PreparedStatement preparedStatement = null;
 		ResultSet resultSet = null;
-		List<Client> clientList = new ArrayList<Client>();
 		Client client = new Client();
 
 		try {
@@ -185,6 +184,34 @@ public class ClientDAO {
 			}
 		} finally {
 			DbUtils.closeQuietly(preparedStatement, connection);
+		}
+
+	}
+	
+	public int deleteClient(int clientId) {
+		Connection connection = null;
+		PreparedStatement preparedStatement = null;
+		ResultSet resultSet = null;
+		int idX = clientId;
+
+		try {
+
+			connection = DriverManager.getConnection(ConnectionParameters.connectionString,
+					ConnectionParameters.username, ConnectionParameters.password);
+
+			String sqlText = "DELETE FROM Client WHERE id = ?";
+
+			preparedStatement = connection.prepareStatement(sqlText);
+			preparedStatement.setInt(1, idX);
+			int deleted = preparedStatement.executeUpdate();
+			return deleted;
+		} catch (SQLException sqle) {
+
+			return -1;
+
+		} finally {
+
+			DbUtils.closeQuietly(resultSet, preparedStatement, connection);
 		}
 
 	}
