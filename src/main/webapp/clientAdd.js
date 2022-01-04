@@ -19,10 +19,10 @@ function formClient() {
 function processResponseStatus(data) {
         console.log("Status: " + data);
         if (data === 0) {
-                alert("Student data added!");
+                alert("Client added!");
         }
         else if (data === 1) {
-                alert("Cannot add the Client.");
+                alert("Cannot add the Client. Id already in use");
         }
         else {
                 alert("Unknown error has occurred");

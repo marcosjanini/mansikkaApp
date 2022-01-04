@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="css/webAppExercises.css">
+<script src="ajaxhelper.js"></script>
+<script src="clientDelete.js"></script>
+
+<title>Delete Client</title>
+</head>
+<body>
+	<div class="header">
+		<h1><a class="link1" href="main.html">Hyvärisen Mansikoita</a></h1>
+	</div>
+	<main>
+
+		<form id="formDeleteClient" method="POST">
+			<h3>--- Delete Client ---</h3>
+			<br> Id: <input type="number" name="id"><br> <input
+				id="formDeleteClient" type="button" onclick=clientDelete()
+				value="Delete" />
+
+
+		</form>
+	</main>
+
+</body>
+</html>
